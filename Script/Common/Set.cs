@@ -46,7 +46,24 @@ namespace Script.Common
 
             set => SetUtils.Set_Set(this, InIndex, value);
         }
+
+        public TArray<T> ToArray()
+        {
+            return SetUtils.Set_ToArray(this);
+        }
+        // {
+        //     TArray<T> ac = new TArray<T>();
+        //     
+        //     ac.SetNum(this.Num());
+        //
+        //     for (int i = 0; i < this.Num(); i++)
+        //     {
+        //         ac.Add(this[i]);
+        //     }
+        //
+        //     return ac;
+        // }
         //public TSet<void*> Union(TSet<T> OtherSet)=>SetUtils.Set_Union(this,OtherSet);
-        
+
     }
 }

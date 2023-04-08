@@ -26,7 +26,7 @@ public:
 	
 	bool Contains(const void* InKey) const;
 
-	TArray<FProperty*> ToArray() const;
+	TArray<uint8*> ToArray() const;
 	
 	int32 Find(void* InValue) const;
 	

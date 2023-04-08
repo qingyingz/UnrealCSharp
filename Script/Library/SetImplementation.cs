@@ -40,8 +40,11 @@ namespace Script.Library
 	    public static extern T Set_GetImplementation<T>(TSet<T>InSet, Int32 Index,out Object OutValue);
 	    
 	    [MethodImpl(MethodImplOptions.InternalCall)]
-	    public static extern Int32 Set_SetImplementation<T>(TSet<T>InSet,Int32 Index,T Value);
+	    public static extern void Set_SetImplementation<T>(TSet<T>InSet,Int32 Index,T Value);
 	
+	    [MethodImpl(MethodImplOptions.InternalCall)]
+	    public static extern TArray<T> Set_ToArrayImplementation<T>(TSet<T>InSet);
+	    
 	// static TSet<void*> Set_UnionImplementation(const MonoObject* InMonoObject,TSet<void*> OtherSet);
     }
 }

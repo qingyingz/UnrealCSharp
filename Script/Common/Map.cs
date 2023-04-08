@@ -15,6 +15,7 @@ namespace Script.Common
 
         ~TMap() => MapUtils.Map_UnRegister(this);
 
+        
         public IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()
         {
             for (var Index = 0; Index < GetMaxIndex(); Index++)

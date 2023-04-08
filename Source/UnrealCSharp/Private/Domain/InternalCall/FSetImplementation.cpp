@@ -86,13 +86,13 @@ bool FSetImplementation::Set_ContainsImplementation(const MonoObject* InMonoObje
 	return false;
 }
 
-TArray<FProperty*> FSetImplementation::Set_ToArrayImplementation(const MonoObject* InMonoObject)
+TArray<uint8*> FSetImplementation::Set_ToArrayImplementation(const MonoObject* InMonoObject)
 {
-	TArray<FProperty*> Array;
-	if (const auto SetHelper = FCSharpEnvironment::GetEnvironment()->GetContainer<FSetHelper>(InMonoObject))
-	{
-		Array=SetHelper->ToArray();
-	}
+	TArray<uint8*> Array;
+	// if (const auto SetHelper = FCSharpEnvironment::GetEnvironment()->GetContainer<FSetHelper>(InMonoObject))
+	// {
+	// 	Array=SetHelper->ToArray();
+	// }
 	
 	return Array;
 }

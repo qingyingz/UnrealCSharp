@@ -19,7 +19,7 @@ public:
 
 	static bool Set_ContainsImplementation(const MonoObject* InMonoObject, const void* InKey);
 
-	static TArray<FProperty*> Set_ToArrayImplementation(const MonoObject* InMonoObject);
+	static TArray<uint8*> Set_ToArrayImplementation(const MonoObject* InMonoObject);
 
 	static int32  Set_FindImplementation(const MonoObject* InMonoObject,void* Value);
 	

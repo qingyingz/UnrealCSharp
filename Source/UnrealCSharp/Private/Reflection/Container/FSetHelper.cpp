@@ -89,9 +89,9 @@ int32 FSetHelper::Find(void* Value) const
 	return Index;
 }
 
-TArray<FProperty*> FSetHelper::ToArray() const
+TArray<uint8*> FSetHelper::ToArray() const
 {
-	TArray<FProperty*> Result;
+	TArray<uint8*> Result;
 	
 	Result.Reserve(ScriptSet->Num());
 	
@@ -99,7 +99,7 @@ TArray<FProperty*> FSetHelper::ToArray() const
 	{
 		if (ScriptSet->IsValidIndex(Index))
 		{
-			const auto Data = static_cast<FProperty*>(ScriptSet->GetData(Index, ScriptSetLayout));
+			const auto Data = static_cast<uint8*>(ScriptSet->GetData(Index, ScriptSetLayout));
 			Result.Add(Data);
 		}
 	}

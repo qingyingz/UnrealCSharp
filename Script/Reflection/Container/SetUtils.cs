@@ -41,5 +41,10 @@ namespace Script.Reflection.Container
         }
         public static  void  Set_Set<T>(TSet<T>InSet, Int32 Index, T Value)=>
             SetImplementation.Set_SetImplementation(InSet,Index,Value);
+
+        public static TArray<T> Set_ToArray<T>(TSet<T> InSet)
+        {
+            return SetImplementation.Set_ToArrayImplementation(InSet);
+        }
     }
 }
