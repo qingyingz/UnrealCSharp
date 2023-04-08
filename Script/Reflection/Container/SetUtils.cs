@@ -26,6 +26,7 @@ namespace Script.Reflection.Container
 
         public static Boolean Set_Contains<T>(TSet<T> InSet, T InValue) =>
             SetImplementation.Set_ContainsImplementation(InSet, InValue);
+<<<<<<< HEAD
         public static Int32 Set_Find<T>(TSet<T>InSet,T Value)=>
             SetImplementation.Set_FindImplementation(InSet,Value);
         
@@ -45,5 +46,7 @@ namespace Script.Reflection.Container
         {
             return SetImplementation.Set_ToArrayImplementation(InSet);
         }
+=======
+>>>>>>> parent of dbcfe41 (TSet 的GetSet 以及迭代器)
     }
 }

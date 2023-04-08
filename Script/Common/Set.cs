@@ -22,6 +22,7 @@ namespace Script.Common
         public Int32 Remove(T InValue) => SetUtils.Set_Remove(this, InValue);
 
         public Boolean Contains(T InValue) => SetUtils.Set_Contains(this, InValue);
+<<<<<<< HEAD
 
         //public  TArray<uint8*> ToArray()=>SetUtils.Set_ToArray(this);
        
@@ -43,5 +44,7 @@ namespace Script.Common
       
 
 
+=======
+>>>>>>> parent of dbcfe41 (TSet 的GetSet 以及迭代器)
     }
 }
