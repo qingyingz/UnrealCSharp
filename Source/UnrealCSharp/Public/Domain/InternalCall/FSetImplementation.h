@@ -21,13 +21,10 @@ public:
 
 	static TArray<uint8*> Set_ToArrayImplementation(const MonoObject* InMonoObject);
 
-	static int32  Set_FindImplementation(const MonoObject* InMonoObject,void* Value);
+	static void  Set_FindImplementation(const MonoObject* InMonoObject,int32 Index,void* Value);
 	
 	static int32 Set_GetMaxIndexImplementation(const MonoObject* InMonoObject);
 	
 	static TSet<void*> Set_UnionImplementation(const MonoObject* InMonoObject,TSet<void*> OtherSet);
 
-	static void Set_GetImplementation(const MonoObject* InMonoObject,int32 Index, MonoObject** OutValue);
-
-	static void Set_SetImplementation(const MonoObject* InMonoObject,int32 Index,MonoObject* InValue);
 };
