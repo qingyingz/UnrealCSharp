@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using Script.Reflection.Container;
 
 namespace Script.Common
 {
-    public class TSet<T> :IEnumerable 
+    public class TSet<T>
     {
         public TSet() => SetUtils.Set_Register(this);
 
@@ -14,15 +12,6 @@ namespace Script.Common
         }
 
         ~TSet() => SetUtils.Set_UnRegister(this);
-
-        public IEnumerator  GetEnumerator()
-        {
-            
-            for (var Index = 0; Index < Num(); Index++)
-            {
-                yield return this[Index];
-            }
-        }
 
         public void Empty(Int32 InExpectedNumElements = 0) => SetUtils.Set_Empty(this, InExpectedNumElements);
 
@@ -33,6 +22,7 @@ namespace Script.Common
         public Int32 Remove(T InValue) => SetUtils.Set_Remove(this, InValue);
 
         public Boolean Contains(T InValue) => SetUtils.Set_Contains(this, InValue);
+<<<<<<< HEAD
 
         //public  TArray<uint8*> ToArray()=>SetUtils.Set_ToArray(this);
        
@@ -65,5 +55,7 @@ namespace Script.Common
         // }
         //public TSet<void*> Union(TSet<T> OtherSet)=>SetUtils.Set_Union(this,OtherSet);
 
+=======
+>>>>>>> parent of dbcfe41 (TSet 的GetSet 以及迭代器)
     }
 }
