@@ -22,8 +22,6 @@ namespace Script.Common
         public Int32 Remove(T InValue) => SetUtils.Set_Remove(this, InValue);
 
         public Boolean Contains(T InValue) => SetUtils.Set_Contains(this, InValue);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         //public  TArray<uint8*> ToArray()=>SetUtils.Set_ToArray(this);
        
@@ -42,23 +40,8 @@ namespace Script.Common
         {
             return SetUtils.Set_ToArray(this);
         }
-        // {
-        //     TArray<T> ac = new TArray<T>();
-        //     
-        //     ac.SetNum(this.Num());
-        //
-        //     for (int i = 0; i < this.Num(); i++)
-        //     {
-        //         ac.Add(this[i]);
-        //     }
-        //
-        //     return ac;
-        // }
-        //public TSet<void*> Union(TSet<T> OtherSet)=>SetUtils.Set_Union(this,OtherSet);
+      
 
-=======
->>>>>>> parent of dbcfe41 (TSet 的GetSet 以及迭代器)
-=======
->>>>>>> parent of dbcfe41 (TSet 的GetSet 以及迭代器)
+
     }
 }

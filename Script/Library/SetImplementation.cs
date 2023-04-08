@@ -26,8 +26,6 @@ namespace Script.Library
 
         [MethodImpl(MethodImplOptions.InternalCall)]
         public static extern Boolean Set_ContainsImplementation<T>(TSet<T> InSet, T InValue);
-<<<<<<< HEAD
-<<<<<<< HEAD
 
         //     [MethodImpl(MethodImplOptions.InternalCall)]   
         // static TArray<FProperty*> Set_ToArrayImplementation(const MonoObject* InMonoObject);
@@ -48,9 +46,5 @@ namespace Script.Library
 	    public static extern TArray<T> Set_ToArrayImplementation<T>(TSet<T>InSet);
 	    
 	// static TSet<void*> Set_UnionImplementation(const MonoObject* InMonoObject,TSet<void*> OtherSet);
-=======
->>>>>>> parent of dbcfe41 (TSet 的GetSet 以及迭代器)
-=======
->>>>>>> parent of dbcfe41 (TSet 的GetSet 以及迭代器)
     }
 }
